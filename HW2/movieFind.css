@@ -1,0 +1,74 @@
+p {                                     /* 페이지 제목 */
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #008b8b;
+}
+
+#identify {                             /* 로그인/로그아웃 + 예약정보 */
+    float: right;
+    margin-right: 15px;
+}
+
+.modal_wrap {                           /* id/password 입력 박스 */
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    padding-left: 70px;
+    background: rgb(188, 231, 248);
+    margin: 100px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px gray;
+
+    display: none;
+    position:absolute;
+    top: -5%;
+    left: 70%;
+    z-index: 2;
+}
+.place_modal_wrap {                     /* 상영 정보 박스 */
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    padding-left: 40px;
+    background: rgb(188, 231, 248);
+    margin: 100px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px gray;
+
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 30%;
+    z-index: 2;
+}
+.modal_close, .place_modal_close {      /* 박스 별 X 버튼 */
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal_style, .place_modal_close{font-size: 15px;}  /* 박스 속 글씨 크기 */
+
+#label_id, #label_pwd {font-weight: bold;}          /* id/pwd 입력의 제목 */
+#input_id, #pwd {position: relative;}               /* id/pwd 입력 구역 */
+#input_id {left: 54px;}                             /* id 입력 구역 */
+#Submit {margin-left: 72px;}                        /* Submit 버튼 */
+#Signin {margin-left: 25px;}                        /* Signin 버튼 */
+
+
+table, td, th {border: 1px solid gray;}           /* 검색 결과 테이블 */
+table {                             
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+th {                                                /* 테이블 헤더 */
+    height: 50px;
+    color: white;
+    background-color: rgb(11, 192, 93);
+}
+td {height: 40px;}                                  /* 테이블 데이터 */
+
+#search_btn{display: none;}                         /* 상영관 검색(=예매) 버튼 */

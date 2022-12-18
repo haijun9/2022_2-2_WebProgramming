@@ -1,0 +1,28 @@
+p {                                         /* 페이지 제목 */
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #008b8b;
+}
+
+label {                                     /* 페이지 항목의 제목 */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select, span {position: relative;}   /* 페이지 항목 */
+#title {                                    /* 제목 입력 */
+    left: 100px;
+    width: 85%;
+}
+#genre {left: 146px;}                       /* 장르 선택 */
+#director {                                 /* 감독 입력 */
+    left: 145px;
+    width: 13%;
+}
+.actor{left: 125px;}                        /* 배우 입력 */
+.when{left: 97px;}                          /* 상영 날짜 */
+.place{left: 95px;}                         /* 상영 장소 */
+.more{left: 188px;}                         /* 상영 장소(추가 입력) */
+.poster{left: 75px;}                        /* 포스터 화일 */
+#save{left: 188px;}                         /* 저장 버튼 */

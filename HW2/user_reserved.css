@@ -1,0 +1,21 @@
+#identify {                 /* 회원 정보 */
+    float: right;
+    margin-right: 15px;
+}
+#user{                      /* 회원 ID */
+    color:blue;
+    font-weight: bold;
+}
+
+table, td, th {border: 1px solid gray;}     /* 예약 정보 테이블*/
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+th {                                          /* 테이블 헤더 */
+    height: 60px;
+    color: white;
+    background-color: rgb(147, 75, 240);
+}
+td {height: 40px;}                            /* 테이블 데이터 */
