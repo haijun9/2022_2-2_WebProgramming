@@ -1,0 +1,158 @@
+ul, li {list-style:none;}     /* 리스트 문양 제거 */
+
+#banner{        /* 상단 배너 */
+    background-color: darkred;
+    height: 75px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {      /* 배너 버튼 + 정렬 버튼 */
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: darkred;
+}
+
+#choice {    /* 배너 선택 부분 */
+    font-size: 20px;
+    text-align: right;
+}
+
+#ID {         /* 로그인 창 속 ID 입력 창 정렬 */
+  position: relative;
+  left: 14px;
+}
+
+img {       /* 슬라이드 이미지 */
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.introduction {   /* 공연 소개 부분 */
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster {       /* 공연 소개 포스터 */
+  height: 300px;
+  width: 200px;
+}
+
+.Right {float: right;}  /* 클래스 우측 정렬 */
+.modal_wrap {       /* 로그인 창 본체 */
+  width: 450px;
+  height: 170px;
+  padding: 20px;
+  background:#fff;
+  margin: 100px;
+
+  border-radius: 5px;
+  display: none;
+  position:absolute;
+  top: 20%;
+  left: 31%;
+  z-index: 2;
+}
+.modal_background {   /* 로그인 창 뒷배경 */
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0,0, 0.3);
+  z-index: 1;
+}
+.modal_close {      /* 로그인 창 속 X버튼 */
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal_style{font-size: 14px;}  /* 로그인 창 글씨 크기 */
+
+
+/* 슬라이드 제작 참고 코드 --------------------------------------------- */
+.slide {              /* 슬라이드 전체 틀 */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    user-select: none;
+  }
+  .slide_item {     /* 슬라이드 속 이미지들 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: left 0.1s;
+  }
+  .slide_button {   /* 좌우 선택 버튼 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 16px);
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-color: #cccc;
+    cursor: pointer;
+  }
+  .slide_prev_button {left: 10px;}  /* 좌측 버튼 마진 */
+  .slide_next_button {right: 10px;} /* 우측 버튼 마진 */
+  ul, li {                    /* 리스트 설정 0으로 초기화 */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .slide_pagination {       /* 슬라이드 아래 작은 동그라미 페이지 */
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_pagination > li.active {   /* 현재 페이지 위치 */
+    color: #7fb5ff;
+  }
+  .slide_pagination > li {    /* 그 외 페이지 위치 */
+    color: #7fb5ff88;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .slide_item_duplicate {     /* 복제하여 반복되는 객체들 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    transition: left 0.1s;
+  }
+/* 슬라이드 제작 참고 코드 --------------------------------------------- */

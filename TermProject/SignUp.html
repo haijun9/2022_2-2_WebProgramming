@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        >
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./signup.css">
+        <title>SignUp Page</title>
+    </head>
+    <body>
+        <header id="banner" class="container">      <!--화면 상단 배너(로그아웃 상태)-->
+            <h1 id="main">WP Ticket</h1>
+            <nav id="choice">
+                <span><button id="login">로그인</button></span> /   <!--로그인 버튼-->
+                <span><button id="signup">회원가입</button></span>   <!--회원가입 버튼-->
+            </nav>
+        </header>
+        <br><br>
+
+        <div class="modal_background"></div>        <!--로그인 모달 창 배경-->
+        <div class="modal_wrap">                    <!--로그인 모달 창 본체-->
+            <div class="modal_close">X</div>        <!--로그인 모달 창 X 버튼-->
+            <br>
+            <div class="modal_style">
+                <label for="ID">아이디: </label> <input type="text" id="ID" required> <br><br>  <!--아이디 입력-->
+                <label for="pwd">비밀번호: </label> <input type="password" id="pwd" required>    <!--비밀번호 입력-->
+                <br>
+                <span class="Right">    <!--버튼 우측 정렬-->
+                    <input type="button" value="확인" id="ok"> <input type="button" value="취소" id="cancel">
+                </span>
+            </div>
+        </div>
+
+        <div class="container" id="input">          <!--회원 정보 입력 & 가입 창-->
+            <label for="name">이름 : </label> <input type="text" id="name" required><br><br>    <!--이름 입력-->
+            <label for="input_ID">아이디 : </label> <input type="text" id="input_ID" required><br><br>  <!--아이디 입력-->
+            <label for="pwd1">비밀번호 : </label> <input type="password" id="pwd1" required><br><br>    <!--비밀번호 입력-->
+            <label for="pwd2">비밀번호 재입력 : </label> <input type="password" id="pwd2" required><br><br> <!--비밀번호 재확인-->
+            <!--회원가입/취소 버튼 정렬-->
+            <span class="Right"><input type="button" id="submit" value="회원가입"> <input type="button" id="back" value="취소"></span>
+            <br>
+        </div>
+        <br>
+
+        <div class="container">         <!--가입 양식 안내 창-->
+            <dl>
+                <dt>가입 양식 안내</dt>
+                <dd>* 아이디는 영문, 숫자 조합 6 ~ 15 글자이어야 합니다.</dd>
+                <dd>* 비밀번호는 영문 대소문자, 숫자, 특수 문자 조합 8 ~ 15 글자이어야 합니다.</dd>
+            </dl>  
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./signup.js"></script>
+    </body>
+</html>

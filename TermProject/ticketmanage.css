@@ -1,0 +1,57 @@
+#banner{        /* 상단 배너 */
+  background-color: darkred;
+  height: 75px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {            /* 배너 버튼 */
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: darkred;
+}
+
+#choice {         /* 배너 선택 부분 */
+  font-size: 20px;
+  text-align: right;
+}
+
+table, tr, th {         /* 테이블 양식 */
+    border: 1px solid;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+table {border-collapse: collapse;}
+
+.poster {width: 100px;}   /* 포스터 칸 너비 */
+img {                   /* 포스터 */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.info {width: 300px;}     /* 예매 내역 칸 너비 */
+
+input {               /* 예매 취소 버튼 */
+  margin: 10px;
+  font-size: 17px;
+  float: right;
+}

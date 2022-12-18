@@ -1,0 +1,75 @@
+#banner{        /* 상단 배너 */
+  background-color: darkred;
+  height: 75px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {              /* 배너 버튼 */
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background: darkred;
+}
+
+#choice {         /* 배너 선택 부분 */
+  font-size: 20px;
+  text-align: right;
+}
+
+table, td, tr {               /* 테이블 양식 */
+  border: 1px solid;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+} 
+table {border-collapse: collapse;}
+
+#stage {              /* 좌석 선택 */
+  font-size: 20px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.seat {             /* 좌석 */
+  width: 50px;
+  background-color: darkgray;
+  border: 1px solid lightcoral;
+  color: white;
+}
+
+iframe {            /* 지도 */
+  height: 350px;
+  width: 300px;
+}
+
+.one {              /* 테이블 긴 한 칸 */
+  height: 700px;
+  width: 900px
+}
+
+.half {             /* 테이블 짧은 반 칸 */
+  height: 350px;
+  width: 350px;
+}
+
+img {             /* 포스터 */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
